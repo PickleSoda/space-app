@@ -1,10 +1,15 @@
 <script setup>
 import Spline from "spline-vue/v3";
-const scene = "https://prod.spline.design/9r3gm4gx6UmZJPPV/scene.splinecode";
+const props = defineProps({
+  url:{
+    type:String,
+  }
+})
+const scene = props.url;
 </script>
 <template>
     <div class="max-w-4xl mx-auto z-30 relative bg-transparent">
-  <Spline :scene="scene" />
+  <Spline v-if="scene" :scene="scene" />
 </div>
 </template>
 

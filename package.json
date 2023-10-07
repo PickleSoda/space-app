@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@btjspr/vue-typewriter": "^1.0.3",
+    "@formkit/auto-animate": "^0.8.0",
     "@splinetool/runtime": "^0.9.470",
     "@tailwindcss/forms": "^0.5.6",
     "axios": "^1.5.1",

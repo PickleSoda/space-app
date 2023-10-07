@@ -5,11 +5,12 @@ export const useMainStore = defineStore("main", {
   state: () => ({
     userIp: null,
     deviceType: null,
+    planets:[]
   }),
   actions: {
     fetch(sampleDataKey) {
       axios
-        .get(`data-sources/${sampleDataKey}.json`)
+        .get(`/data-sources/${sampleDataKey}.json`)
         .then((r) => {
           if (r.data && r.data.data) {
             this[sampleDataKey] = r.data.data;

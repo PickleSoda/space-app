@@ -3,21 +3,23 @@ const routes = [
     {
         meta: {
           title: "Space",
-          requiresAuth: true,
         },
         path: "/",
         name: "Home",
         component: () => import("@/views/main.vue"),
       },
       {
-        meta: {
-          title: "Space",
-          requiresAuth: true,
-        },
-        path: "/earth",
-        name: "earth",
-        component: () => import("@/views/earth.vue"),
-      },
+  meta: {
+    title: "planet",
+    requiresAuth: true,
+  },
+  path: "/planet/:id",
+  name: "planet",
+  component: () => import("@/views/planet.vue"),
+  props: (route) => ({ id: route.params.id ? parseInt(route.params.id) : 2, query: route.query }),
+}
+
+
 //   {
 //     meta: {
 //       title: "Error",
@@ -41,3 +43,5 @@ const router = createRouter({
   },
 });
 export default router;
+
+

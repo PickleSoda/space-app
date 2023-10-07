@@ -5,6 +5,7 @@ import router from "./router";
 import { useMainStore } from "./stores/main";
 import "./index.css";
 import axios from "axios";
+import { autoAnimatePlugin } from '@formkit/auto-animate/vue'
 
 import Particles from "vue3-particles";
 
@@ -15,7 +16,10 @@ const app = createApp(App);
 const pinia = createPinia();
 app.use(pinia);
 app.use(Particles);
+app.use(autoAnimatePlugin)
+
 const mainStore = useMainStore();
+mainStore.fetch("planets")
 
 axios.defaults.timeout = 300000;
 

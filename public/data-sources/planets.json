@@ -1,0 +1,173 @@
+{
+    "data": [
+      {
+        "Name": "Mercury",
+        "Size": "4,880 km (0.38 Earths)",
+        "Weight": "3.3011 × 10^23 kg (0.055 Earths)",
+        "ChemicalComposition": "Primarily composed of rock and metal",
+        "DistanceFromSun": "57.9 million km",
+        "DistanceFromEarth": "Approximately 77 million km (closest approach)",
+        "Description": "Embark on the ultimate thrill ride to Mercury! Experience scorching days, freezing nights, and breathtaking views of the Sun. Don't forget your sunscreen!",
+        "NumberofMoons": "0",
+        "NumberofExpeditions": "1",
+        "FunFacts": [
+          "Mercury has the most extreme temperature variations in our solar system.",
+          "It's the smallest and fastest-moving planet.",
+          "Only one spacecraft, NASA's MESSENGER, has visited Mercury."
+        ],
+        "MustHave": [
+          "Sunscreen with a high SPF",
+          "Thermal insulation clothing for extreme temperatures"
+        ],
+        "url":"https://prod.spline.design/L3i7F6lzDOTVppMC/scene.splinecode"
+      },
+      {
+        "Name": "Venus",
+        "Size": "12,104 km (0.95 Earths)",
+        "Weight": "4.8675 × 10^24 kg (0.815 Earths)",
+        "ChemicalComposition": "Primarily composed of rock and metal",
+        "DistanceFromSun": "108.2 million km",
+        "DistanceFromEarth": "Approximately 38 million km (closest approach)",
+        "Description": "Visit Venus, the planet of love and mystery! Explore its thick, sultry atmosphere and volcanic plains. A perfect destination for the adventurous traveler!",
+        "NumberofMoons": "0",
+        "NumberofExpeditions": "2",
+        "FunFacts": [
+          "Venus has a runaway greenhouse effect, making it the hottest planet in our solar system.",
+          "It rotates in the opposite direction to most planets (retrograde rotation).",
+          "No human missions have been sent to Venus due to its harsh conditions."
+        ],
+        "MustHave": [
+          "Heat-resistant suit to withstand scorching temperatures",
+          "Advanced breathing apparatus for the thick carbon dioxide atmosphere"
+        ],
+        "url":"https://prod.spline.design/HcBjxTBxnXgsE5SK/scene.splinecode"
+      },
+      {
+        "Name": "Earth",
+        "Size": "12,742 km",
+        "Weight": "5.972 × 10^24 kg",
+        "ChemicalComposition": "Mainly composed of iron, oxygen, silicon, and magnesium",
+        "DistanceFromSun": "149.6 million km",
+        "DistanceFromEarth": "0 km",
+        "Description": "Experience the wonders of Earth, your home away from home! Dive into vibrant cultures, awe-inspiring landscapes, and a diverse array of life forms. It's the ultimate vacation spot!",
+        "NumberofMoons": "1",
+        "NumberofExpeditions": "Countless",
+        "FunFacts": [
+          "Earth is the only known planet with life as we know it.",
+          "It has a wide variety of ecosystems, from lush rainforests to arid deserts.",
+          "Humans have explored every corner of our planet through numerous expeditions."
+        ],
+        "MustHave": [
+          "Travel documents (passport, visa)",
+          "Adventurous spirit and curiosity"
+        ],
+        "url":"https://prod.spline.design/9r3gm4gx6UmZJPPV/scene.splinecode"
+      },
+      {
+        "Name": "Mars",
+        "Size": "6,779 km (0.53 Earths)",
+        "Weight": "6.4171 × 10^23 kg (0.107 Earths)",
+        "ChemicalComposition": "Primarily composed of rock and iron",
+        "DistanceFromSun": "227.9 million km",
+        "DistanceFromEarth": "Approximately 54.6 million km (closest approach)",
+        "Description": "Get ready for an out-of-this-world adventure on Mars! Explore its rusty deserts, ancient river valleys, and the quest for signs of life. It's a planet full of mystery and wonder!",
+        "NumberofMoons": 2,
+        "NumberofExpeditions": "10+",
+        "FunFacts": [
+          "Mars is often called the 'Red Planet' due to its reddish appearance.",
+          "It has the tallest volcano in the solar system, Olympus Mons.",
+          "Numerous robotic missions have been sent to Mars, and human exploration plans are in progress."
+        ],
+        "MustHave": [
+          "Advanced space suit with life support systems",
+          "Geological tools for studying Martian rocks and terrain"
+        ],
+        "url":"https://prod.spline.design/hacsTypRasIHR4cJ/scene.splinecode"
+      },
+      {
+        "Name": "Jupiter",
+        "Size": "139,822 km (11.2 Earths)",
+        "Weight": "1.8982 × 10^27 kg (317.8 Earths)",
+        "ChemicalComposition": "Mainly composed of hydrogen and helium",
+        "DistanceFromSun": "778.3 million km",
+        "DistanceFromEarth": "Approximately 588.5 million km (closest approach)",
+        "Description": "Dive into the whirlwind beauty of Jupiter, the king of planets! Witness epic storms, massive moons, and stunning gas bands. A must-visit destination for thrill-seekers!",
+        "NumberofMoons": "79",
+        "NumberofExpeditions":" 1 (flyby)",
+        "FunFacts": [
+          "Jupiter has the most massive and powerful magnetic field in the solar system.",
+          "It has a massive storm called the Great Red Spot that has lasted for centuries.",
+          "Only robotic missions have visited Jupiter, but future exploration is planned."
+        ],
+        "MustHave": [
+          "Highly shielded spacecraft to protect from intense radiation",
+          "Telescopic cameras for capturing breathtaking images"
+        ],
+        "url":"https://prod.spline.design/Sd7iUArwYZgiMLKi/scene.splinecode"
+      },
+      {
+        "Name": "Saturn",
+        "Size": "116,464 km (9.4 Earths)",
+        "Weight": "5.6834 × 10^26 kg (95.2 Earths)",
+        "ChemicalComposition": "Mainly composed of hydrogen and helium",
+        "DistanceFromSun": "1.4 billion km",
+        "DistanceFromEarth": "Approximately 1.2 billion km (closest approach)",
+        "Description": "Ring in the adventure on Saturn, the planet with the bling! Explore its dazzling ring system, cruise through colorful storms, and be awestruck by its majestic beauty.",
+        "NumberofMoons": "83",
+        "NumberofExpeditions": "1 (flyby)",
+        "FunFacts": [
+          "Saturn's spectacular ring system is made up of countless icy particles.",
+          "It has a hexagonal-shaped storm at its north pole.",
+          "Only a few missions have visited Saturn, including the iconic Cassini-Huygens mission."
+        ],
+        "MustHave": [
+          "Advanced spacecraft equipped with instruments for ring studies",
+          "Sturdy camera equipment for capturing ring and storm phenomena"
+        ],
+        "url":"https://prod.spline.design/pvwXVPW1FPcD4lvy/scene.splinecode"
+      },
+      {
+        "Name": "Uranus",
+        "Size": "50,724 km (4.0 Earths)",
+        "Weight": "8.6810 × 10^25 kg (14.5 Earths)",
+        "ChemicalComposition": "Mainly composed of hydrogen, helium, and methane",
+        "DistanceFromSun": "2.9 billion km",
+        "DistanceFromEarth": "Approximately 2.6 billion km",
+        "Description": "Go where no one has gone before, to the unique world of Uranus! Experience its quirky sideways spin, icy blue atmosphere, and discover the secrets of the ice giant.",
+        "NumberofMoons": "27",
+        "NumberofExpeditions": "1 (flyby)",
+        "FunFacts": [
+          "Uranus is the only planet that rotates on its side (axial tilt of 98 degrees).",
+          "It has a unique blue-green color due to its methane-rich atmosphere.",
+          "Voyager 2 is the only spacecraft to have visited Uranus."
+        ],
+        "MustHave": [
+          "Specialized equipment for studying the tilted magnetic field",
+          "Adaptive thermal clothing for extreme cold"
+        ],
+        "url":"https://prod.spline.design/XcHnJgmvWqqLfKJM/scene.splinecode"
+      },
+      {
+        "Name": "Neptune",
+        "Size": "49,244 km (3.9 Earths)",
+        "Weight": "1.02413 × 10^26 kg (17.1 Earths)",
+        "ChemicalComposition": "Mainly composed of hydrogen, helium, and methane",
+        "DistanceFromSun": "4.5 billion km",
+        "DistanceFromEarth": "Approximately 4.3 billion km",
+        "Description": "Dive into the deep-blue mysteries of Neptune! Explore its stormy clouds, visit icy moons, and uncover the secrets of this distant ice giant. Adventure awaits!",
+        "NumberofMoons": "14",
+        "NumberofExpeditions": "1 (flyby)",
+        "FunFacts": [
+          "Neptune has the strongest sustained winds in the solar system, reaching up to 1,500 mph (2,400 km/h).",
+          "It has a dark storm system called the 'Great Dark Spot.'",
+          "Voyager 2 provided our only close-up look at Neptune."
+        ],
+        "MustHave": [
+          "Robust spacecraft with advanced weather monitoring equipment",
+          "Diving gear for exploring Neptune's deep-blue atmosphere"
+        ],
+        "url":"https://prod.spline.design/iXtVFCLeKApN9CyP/scene.splinecode"
+      }
+    ]
+  }
+  
