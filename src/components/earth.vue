@@ -3,7 +3,7 @@ import Spline from "spline-vue/v3";
 const scene = "https://prod.spline.design/EMVkGBQppOHNnrlL/scene.splinecode";
 </script>
 <template>
-    <div class="p-10 max-w-5xl mx-auto">
+    <div class="max-w-4xl mx-auto">
   <Spline :scene="scene" class="aboslute"/>
 </div>
 </template>

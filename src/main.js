@@ -1,8 +1,27 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-// main.js or main.ts
-import './index.css';
+import { createApp } from "vue";
+import { createPinia } from "pinia";
+import App from "./App.vue";
+import router from "./router";
+import { useMainStore } from "./stores/main";
+import "./index.css";
+import axios from "axios";
+
+const app = createApp(App);
+
+/* Init Pinia */
+const pinia = createPinia();
+app.use(pinia);
+const mainStore = useMainStore();
+
+axios.defaults.timeout = 300000;
 
 
-
-createApp(App).mount('#app')
+/* Default title tag */
+const defaultDocumentTitle = "space-app";
+/* Set document title from route meta */
+router.afterEach((to) => {
+  document.title = to.meta?.title
+    ? `${to.meta.title} — ${defaultDocumentTitle}`
+    : defaultDocumentTitle;
+});
+app.use(router).mount("#app");

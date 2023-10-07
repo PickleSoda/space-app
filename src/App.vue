@@ -1,17 +1,17 @@
+
 <script setup>
-import planet from '@/components/planet.vue';
-import solarSystem from "@/components/solar-system.vue"
+import { RouterView, RouterLink, useRouter } from "vue-router";
+import { useMainStore } from "@/stores/main"; // Import your Pinia store
+
+// Retrieve the Pinia store instance
+const mainStore = useMainStore();
+
+// Vue Router instance
+const router = useRouter();
+
 </script>
-<template>
 
-  <solarSystem/>
-  <planet/>
-        <div class="p-8 text-white">
-            <h1 class="">
-                hi this is earth dafuq
-            </h1>
-        </div>
-
+<template>>
+      <!-- Render the RouterView if the user is authenticated -->
+      <RouterView />
 </template>
-
-<style></style>
