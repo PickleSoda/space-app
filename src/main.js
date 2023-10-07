@@ -6,11 +6,15 @@ import { useMainStore } from "./stores/main";
 import "./index.css";
 import axios from "axios";
 
+import Particles from "vue3-particles";
+
+
 const app = createApp(App);
 
 /* Init Pinia */
 const pinia = createPinia();
 app.use(pinia);
+app.use(Particles);
 const mainStore = useMainStore();
 
 axios.defaults.timeout = 300000;
