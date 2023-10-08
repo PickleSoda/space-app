@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 const routes = [
   {
     meta: {
@@ -31,23 +31,23 @@ const routes = [
     props: (route) => ({ query: route.query }),
   },
 
-  //   {
-  //     meta: {
-  //       title: "Error",
-  //       requiresAuth: false,
-  //     },
-  //     path: "/error",
-  //     name: "error",
-  //     component: () => import("@/views/ErrorView.vue"),
-  //   },
-  //   {
-  //     path: "/:catchAll(.*)", // Use a parameter with a custom regexp to define the catch-all route
-  //     redirect: "/error",
-  //   },
+    {
+      meta: {
+        title: "Error",
+        requiresAuth: false,
+      },
+      path: "/error",
+      name: "error",
+      component: () => import("@/views/error.vue"),
+    },
+    {
+      path: "/:catchAll(.*)", // Use a parameter with a custom regexp to define the catch-all route
+      redirect: "/error",
+    },
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes,
   scrollBehavior(to, from, savedPosition) {
     return savedPosition || { top: 0 };
