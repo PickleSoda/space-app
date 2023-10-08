@@ -24,6 +24,7 @@ const cancelTrip = ref(false)
 
 onMounted(() => {
     planet.value = mainStore.planets[id.value]
+    forceRerender();
     findNextPlanet()
     findPrevPlanet()
 })
@@ -100,8 +101,8 @@ const forceRerender = () => {
 };
 </script>
 <template>
-    <div v-if="prevPlanet||nextPlanet" class="p-8 text-white flex flex-row items-center justify-between w-full">
-        <h1 class="cursor-pointer" @click="previous()"> {{ prevPlanet ? "< Previous":"Cancel Trip" }}</h1>
+    <div v-if="(prevPlanet||nextPlanet)&&!cancelTrip" class="p-8 text-white flex flex-row items-center justify-between w-full">
+        <h1 class="cursor-pointer" @click="previous()"> {{ prevPlanet ? "< Previous":"< Cancel Trip" }}</h1>
         <h1 class="cursor-pointer" @click="next()">  {{ nextPlanet && nextPlanet.Name != "" ?`Up Next ${nextPlanet.Name}`:" Finnish Trip " }} > </h1>
         
     </div>
@@ -117,9 +118,9 @@ const forceRerender = () => {
         <div class="w-64 h-20 flex items-center justify-around">
 
             <router-link to="/"
-                class="cursor-pointer border border-white p-2 break-before-avoid hover:shadow-lg shadow-white">Cancel
+                class="cursor-pointer border border-white p-2 break-before-avoid  hover:bg-white hover:text-black">Cancel
                 Trip</router-link>
-            <h1 @click="notCancel()" class="cursor-pointer border border-white p-2">Continiue</h1>
+            <h1 @click="notCancel()" class="cursor-pointer border border-white p-2 break-before-avoid  hover:bg-white hover:text-black">Continiue</h1>
         </div>
     </div>
 </template>

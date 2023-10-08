@@ -1,14 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/assets/rocket-svgrepo-com.svg" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/assets/rocket-svgrepo-com.svg"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Phopper</title>
-      
   </head>
-  <body class="m-0 top-0 left-0 right-0 p-0 bg-black font-mono">
-    <div id="app"></div>
+  <body>
+    <div
+      id="app"
+      class="m-0 top-0 left-0 right-0 h-screen p-0 space font-mono"
+    ></div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
+<style>
+  body {
+    background: radial-gradient(circle at bottom, rgb(0, 0, 73) 0, black 100%);
+    height: 100vh;
+    overflow: hidden;
+  }
+  .space {
+    background: rgba(128, 0, 128, 0.2) center / 200px 200px round;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+</style>

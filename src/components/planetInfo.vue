@@ -28,9 +28,9 @@
 
 <template>
     <div
-      class="relative -mt-10 sm:-mt-32 md:mt-0 md:absolute sm:top-20 left-0"
+      class="relative -mt-10 sm:-mt-32 md:mt-0 md:absolute sm:top-20 left-0 w-80"
     >
-      <div class="bg-opacity-60 p-4  bg-black z-20  text-white text-sm text- sm:text-base">
+      <div class="bg-opacity-20 p-4  bg-black z-20  text-white text-sm text- sm:text-base border border-white border-opacity-30">
         <h2 class="text-base sm:text-lg font-bold">Name: </h2>
         
         <Typewriter :speed="50" :delay="500" :loop="false" :textStyles="{color: 'white', fontSize: '1.25em'}" :cursorStyles="{width: '0px'}">
@@ -50,7 +50,7 @@
 
 
         <p class="pt-1">Chemical Composition:  </p>
-        <Typewriter :speed="50" :delay="2000" :loop="false" :textStyles="{color: 'white', fontSize: '1em'}" :cursorStyles="{width: '0px'}">
+        <Typewriter :speed="20" :delay="2000" :loop="false" :textStyles="{color: 'white', fontSize: '1em'}" :cursorStyles="{width: '0px'}">
             <p> {{ planetInfo.ChemicalComposition }}</p>
         </Typewriter>
         
@@ -91,7 +91,7 @@
     <div
       class="relative  md:absolute sm:top-24 sm:right-0 w-full md:w-1/3"
     >
-      <div class="bg-opacity-60 p-4  bg-black z-20  text-white text-sm text- sm:text-base">
+      <div class="bg-opacity-20 p-4  bg-black z-20  text-white text-sm text- sm:text-base border border-white border-opacity-30">
         <h2 class="text-base sm:text-lg font-bold md:pr-4">Description: </h2>
         
         <Typewriter :speed="20" :delay="500" :loop="false" :textStyles="{color: 'white', fontSize: '0.75em'}" :cursorStyles="{width: '0px'}">

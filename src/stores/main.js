@@ -5,7 +5,7 @@ export const useMainStore = defineStore("main", {
   state: () => ({
     userIp: null,
     deviceType: null,
-    planets:[]
+    planets: [],
   }),
   actions: {
     fetch(sampleDataKey) {
@@ -29,21 +29,19 @@ export const useMainStore = defineStore("main", {
         // Handle errors as needed
       }
     },
-    },
-    setDeviceType() {
-      const platform = navigator.platform.toLowerCase();
-      if (
-        /(android|webos|iphone|ipad|ipod|blackberry|windows phone)/.test(
-          platform
-        )
-      ) {
-        this.deviceType = "mobile";
-      } else if (/mac|win|linux/i.test(platform)) {
-        this.deviceType = "desktop";
-      } else if (/tablet|ipad/i.test(platform)) {
-        this.deviceType = "tablet";
-      } else {
-        this.deviceType = "unknown";
-      }
-    },
-  });
+  },
+  setDeviceType() {
+    const platform = navigator.platform.toLowerCase();
+    if (
+      /(android|webos|iphone|ipad|ipod|blackberry|windows phone)/.test(platform)
+    ) {
+      this.deviceType = "mobile";
+    } else if (/mac|win|linux/i.test(platform)) {
+      this.deviceType = "desktop";
+    } else if (/tablet|ipad/i.test(platform)) {
+      this.deviceType = "tablet";
+    } else {
+      this.deviceType = "unknown";
+    }
+  },
+});

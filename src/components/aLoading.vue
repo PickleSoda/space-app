@@ -22,6 +22,7 @@ const randText = () => {
   0% {
     transform: translate(-30px, -10px) rotate(45deg);
   }
+
   100% {
     transform: translate(30px, 10px) rotate(45deg);
   }

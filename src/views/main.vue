@@ -5,16 +5,15 @@ import Typewriter from '@btjspr/vue-typewriter';
 
 </script>
 <template>
-        <div class="p-8 text-white">
-            <Typewriter :speed="50" :delay="10" :loop="false" :textStyles="{ color: 'white', fontSize: '1.2em' }"
-                :cursorStyles="{ width: '0px' }" class="pb-2">
-                <h1>Welcome to Phopper, your portal to interplanetary exploration!</h1>
+    <div class="p-8 text-white">
+        <Typewriter :speed="50" :delay="10" :loop="false" :textStyles="{ color: 'white', fontSize: '1.2em' }"
+            :cursorStyles="{ width: '0px' }" class="pb-2">
+            <h1>Welcome to Phopper, your portal to interplanetary exploration!</h1>
 
-            </Typewriter>
-        </div>
-        <solarSystem/>
-        <MainInfo/>
-
+        </Typewriter>
+    </div>
+    <solarSystem />
+    <MainInfo />
 </template>
 
 "

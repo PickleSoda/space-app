@@ -5,7 +5,7 @@ import { useMainStore } from "@/stores/main"; // Import your Pinia store
 
 import type { Container, Engine } from "tsparticles-engine";
 import { loadFull } from "tsparticles";
- const options = {
+const options = {
   particles: {
     color: {
       value: "#ffffff",
@@ -49,7 +49,7 @@ import { loadFull } from "tsparticles";
         enable: true,
         mode: "push",
       },
-      
+
       onHover: {
         enable: true,
         mode: "repulse",
@@ -134,23 +134,21 @@ const mainStore = useMainStore();
 const router = useRouter();
 
 const particlesInit = async (engine: Engine) => {
-    await loadFull(engine);
+  await loadFull(engine);
 
-    console.log(engine);
+  console.log(engine);
 };
 
 const particlesLoaded = async (container: Container) => {
-    console.log(container);
+  console.log(container);
 };
 
 </script>
 
 <template>
-
-       
   <vue-particles id="tsparticles-stars" :options="optionsStars" :particlesInit="particlesInit"
-  :particlesLoaded="particlesLoaded" />
+    :particlesLoaded="particlesLoaded" />
   <vue-particles id="tsparticles-zodiac" :options="options" :particlesInit="particlesInit"
-  :particlesLoaded="particlesLoaded" />
+    :particlesLoaded="particlesLoaded" />
   <RouterView />
 </template>
