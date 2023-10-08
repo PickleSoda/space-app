@@ -98,12 +98,12 @@ watch(
             <p class="text-center">
                 ~{{ stats.totalDistance }} Milion km. <br />
 
-                ~{{ Math.ceil(stats.totalDistance / 0.00005) }} Hrs
+                ~{{ Math.ceil(stats.totalDistance / 0.05) }} Hrs
                 <br>
 
-                ~({{ Math.ceil(stats.totalDistance / 0.0012) }} days)
+                ~({{ Math.ceil(stats.totalDistance / 1.2) }} days)
                 <br>
-                ~({{ Math.ceil((stats.totalDistance / 0.0012) / 360) }} Years)
+                ~({{ Math.ceil((stats.totalDistance / 1.2) / 360) }} Years)
                 <br>
                 Total Cost: [$$$,$$$,$$$,$$$]
             </p>

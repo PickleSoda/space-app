@@ -28,7 +28,7 @@
 
 <template>
     <div
-      class="relative -mt-10 sm:-mt-32 md:mt-0 md:absolute sm:top-20 left-0 w-80"
+      class="relative -mt-10 sm:-mt-32 md:mt-0 md:absolute sm:top-20 left-0 w-full md:w-80"
     >
       <div class="bg-opacity-20 p-4  bg-black z-20  text-white text-sm text- sm:text-base border border-white border-opacity-30">
         <h2 class="text-base sm:text-lg font-bold">Name: </h2>
@@ -89,7 +89,7 @@
       </div>
     </div>
     <div
-      class="relative  md:absolute sm:top-24 sm:right-0 w-full md:w-1/3"
+      class="relative mb-30 md:absolute sm:top-24 sm:right-0 w-full md:w-1/3"
     >
       <div class="bg-opacity-20 p-4  bg-black z-20  text-white text-sm text- sm:text-base border border-white border-opacity-30">
         <h2 class="text-base sm:text-lg font-bold md:pr-4">Description: </h2>
