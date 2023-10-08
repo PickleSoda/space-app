@@ -103,7 +103,7 @@ const forceRerender = () => {
 <template>
     <div v-if="(prevPlanet||nextPlanet)&&!cancelTrip" class="p-8 text-white flex flex-row items-center justify-between w-full">
         <h1 class="cursor-pointer" @click="previous()"> {{ prevPlanet ? "< Previous":"< Cancel Trip" }}</h1>
-        <h1 class="cursor-pointer" @click="next()">  {{ nextPlanet && nextPlanet.Name != "" ?`Up Next ${nextPlanet.Name}`:" Finnish Trip " }} > </h1>
+        <h1 class="cursor-pointer" @click="next()">  {{ nextPlanet && nextPlanet.Name != "" ?`Up Next ${nextPlanet.Name} ${Math.ceil((nextPlanet.Dist-planet.Dist)/1.2)} Days`:" Finnish Trip " }} > </h1>
         
     </div>
     <div v-else class="p-8 text-white text-left w-full">

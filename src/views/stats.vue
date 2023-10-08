@@ -3,7 +3,6 @@ import { useRoute, useRouter } from "vue-router";
 import { ref, watch, onMounted } from "vue";
 import { useMainStore } from "@/stores/main";
 import Typewriter from "@btjspr/vue-typewriter";
-import TripStats from "./TripStats.vue";
 
 const mainStore = useMainStore();
 const route = useRoute();
@@ -97,7 +96,7 @@ watch(
         class="w-full flex items-center justify-around text-sm md:text-base"
       >
         <p>{{ trips.from }} →</p>
-        <p>{{ trips.dist }} mil.km</p>
+        <p>{{ Math.ceil(trips.dist/1.2) }} days</p>
         <p>→ {{ trips.to }}</p>
       </ul>
       <div class="flex justify-items-start mt-5">
@@ -111,7 +110,7 @@ watch(
 
             ~({{ Math.ceil(stats.totalDistance / 1.2) }} days)
             <br />
-            ~({{ Math.ceil(stats.totalDistance / 1.2 / 360) }} Years)
+            ~({{ (stats.totalDistance / 1.2 / 360).toFixed(1) }} Years)
             <br />
             Total Cost: 
             <br/>
@@ -128,7 +127,7 @@ watch(
 
             ~({{ Math.ceil(stats.totalDistance / 3.6) }} days)
             <br />
-            ~({{ Math.ceil(stats.totalDistance / 3.6 / 360) }} Years)
+            ~({{ (stats.totalDistance / 3.6 / 360).toFixed(1) }} Years)
             <br />
             Total Cost: [$$$,$$$,$$$,$$$]
           </p>
@@ -139,6 +138,11 @@ watch(
       class="text-white p-2 border border-white w-fit mx-auto mt-2 hover:bg-white hover:text-black cursor-pointer"
     >
       <router-link to="/">Return Home</router-link>
+    </div>
+    <div
+      class="text-white p-2 border border-white w-fit mx-auto mt-2 hover:bg-white hover:text-black cursor-pointer"
+    >
+      <router-link to="/quiz">Go To Quiz!</router-link>
     </div>
   </div>
 </template>

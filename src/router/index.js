@@ -25,10 +25,18 @@ const routes = [
     meta: {
       title: "reciept",
     },
-    path: "/Reciept",
+    path: "/reciept",
     name: "reciept",
     component: () => import("@/views/stats.vue"),
     props: (route) => ({ query: route.query }),
+  },
+  {
+    meta: {
+      title: "quiz",
+    },
+    path: "/quiz",
+    name: "quiz",
+    component: () => import("@/views/shit.vue"),
   },
 
     {
