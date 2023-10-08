@@ -73,7 +73,7 @@ const [parent] = useAutoAnimate()
 <template>
     <div class="relative  sm:-mt-20 md:mt-0 md:absolute sm:top-20 left-0 w-full md:w-72 sm:mb-20">
         <div class="bg-opacity-60 p-4  bg-black z-20  text-white text-sm text- sm:text-base border-opacity-40">
-            <Typewriter :speed="20" :delay="2000" :loop="false" :textStyles="{ color: 'white', fontSize: '1em' }"
+            <Typewriter :speed="20" :delay="3000" :loop="false" :textStyles="{ color: 'white', fontSize: '1em' }"
                 :cursorStyles="{ width: '0px' }">
                 With Phopper, you have the power to customize your own space adventure.
             </Typewriter>
@@ -101,10 +101,10 @@ const [parent] = useAutoAnimate()
 
             </Typewriter>
             <button @click="shuffleArray(planets)"
-                class="text-lg mx-auto w-full p-1 border border-white border-opacity-60">↑ shuffle ↓</button>
+                class="text-lg mx-auto w-full p-1 border border-white border-opacity-60 hover:bg-white hover:text-black">↑ shuffle ↓</button>
 
             <ul ref="parent" class="border-x p-2 border-white border-opacity-60">
-                <li>
+                <li class="w-full flex flex-nowrap pb-1 text-lg">
                     1. Earth
                 </li>
                 <li v-for="planet, index in planets" :key="planet.id" class="w-full flex flex-nowrap">
@@ -112,9 +112,9 @@ const [parent] = useAutoAnimate()
                         {{ index + 2 }}. {{ planet.name }}
                     </p>
                     <div class="ml-auto">
-                        <button @click="moveUp(planet.id)" class="text-xl pr-1"
+                        <button @click="moveUp(planet.id)" class="!text-2xl sm:!text-xl pr-2"
                             :class="index == '0' && 'opacity-30 cursor-default'">↑</button>
-                        <button @click="moveDown(planet.id)" class="text-xl pr-3"
+                        <button @click="moveDown(planet.id)" class="!text-2xl sm:!text-xl pr-4"
                             :class="index == '6' && 'opacity-30 cursor-default'">↓</button>
                             <button @click="disable(planet.id)" class="text-xl">X</button>
                     </div>
@@ -129,7 +129,7 @@ const [parent] = useAutoAnimate()
                 </li>
             </ul>
             <button @click="startTrip()"
-                class="text-lg mx-auto w-full p-1 border border-white border-opacity-60">Let's Go!</button>
+                class="text-lg mx-auto w-full p-1 border border-white border-opacity-60 hover:bg-white hover:text-black">Let's Go!</button>
 
 
         </div>

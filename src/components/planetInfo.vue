@@ -94,7 +94,7 @@
       <div class="bg-opacity-60 p-4  bg-black z-20  text-white text-sm text- sm:text-base">
         <h2 class="text-base sm:text-lg font-bold md:pr-4">Description: </h2>
         
-        <Typewriter :speed="50" :delay="500" :loop="false" :textStyles="{color: 'white', fontSize: '0.75em'}" :cursorStyles="{width: '0px'}">
+        <Typewriter :speed="20" :delay="500" :loop="false" :textStyles="{color: 'white', fontSize: '0.75em'}" :cursorStyles="{width: '0px'}">
         
             <h1 >{{ planetInfo.Description }}</h1>
         </Typewriter>
@@ -103,7 +103,7 @@
 
         <div v-for="FunFacts,index in planetInfo.FunFacts  " >
 
-            <Typewriter :speed="50" :delay="1000+index*100" :loop="false" :textStyles="{color: 'white', fontSize: '0.75em'}" :cursorStyles="{width: '0px'}">
+            <Typewriter :speed="20" :delay="1000+index*100" :loop="false" :textStyles="{color: 'white', fontSize: '0.75em'}" :cursorStyles="{width: '0px'}">
            - {{FunFacts}}
         </Typewriter>
 
@@ -113,7 +113,7 @@
 
         <div v-for="MustHave in planetInfo.MustHave  " >
 
-            <Typewriter :speed="50" :delay="1500+index*100" :loop="false" :textStyles="{color: 'white', fontSize: '0.75em'}" :cursorStyles="{width: '0px'}">
+            <Typewriter :speed="20" :delay="1500+index*100" :loop="false" :textStyles="{color: 'white', fontSize: '0.75em'}" :cursorStyles="{width: '0px'}">
            - {{MustHave}}
         </Typewriter>
 

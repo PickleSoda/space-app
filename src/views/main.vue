@@ -14,7 +14,6 @@ import Typewriter from '@btjspr/vue-typewriter';
         </div>
         <solarSystem/>
         <MainInfo/>
-        <trip/>
 
 </template>
 

@@ -17,7 +17,16 @@ const routes = [
   name: "planet",
   component: () => import("@/views/planet.vue"),
   props: (route) => ({ id: route.params.id ? parseInt(route.params.id) : 2, query: route.query }),
-}
+},
+{
+    meta: {
+      title: "reciept",
+    },
+    path: "/Reciept",
+    name: "reciept",
+    component: () => import("@/views/stats.vue"),
+    props: (route) => ({query: route.query }),
+  },
 
 
 //   {

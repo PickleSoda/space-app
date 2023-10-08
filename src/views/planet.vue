@@ -14,6 +14,7 @@ const query = ref(route.query);
 
 const planet = ref({});
 const nextPlanet = ref("");
+const prevPlanet = ref("");
 
 const info = ref(0)
 const model = ref(0)
@@ -24,6 +25,7 @@ const cancelTrip = ref(false)
 onMounted(() => {
     planet.value = mainStore.planets[id.value]
     findNextPlanet()
+    findPrevPlanet()
 })
 // Watch for changes in the route
 watch(
@@ -34,6 +36,7 @@ watch(
         planet.value = mainStore.planets[id.value];
         forceRerender();
         findNextPlanet();
+        findPrevPlanet()
 
     }
 );
@@ -65,17 +68,24 @@ const findNextPlanet = () => {
     const nextId = queryArray[currentIndex + 1];
     nextPlanet.value = mainStore.planets[nextId]
 }
+const findPrevPlanet = () => {
+    const planetIds = query.value;
+    const queryArray = Object.keys(planetIds).map((key) => planetIds[key]);
+    const currentIndex = queryArray.indexOf(id.value.toString());
+    const prevId = queryArray[currentIndex - 1];
+    prevPlanet.value = mainStore.planets[prevId]
+}
 
 function next() {
     const planetIds = query.value;
     const queryArray = Object.keys(planetIds).map((key) => planetIds[key]);
     const currentIndex = queryArray.indexOf(id.value.toString());
-    if (currentIndex < queryArray.length - 1) {
+    if (currentIndex < queryArray.length-1) {
         const nextId = queryArray[currentIndex + 1];
         router.push({ name: 'planet', params: { id: nextId }, query: queryArray });
     }
     else{
-        router.push({ name: 'stats', query: queryArray });
+        router.push({ name: 'reciept', query: queryArray });
     }
 }
 
@@ -90,11 +100,13 @@ const forceRerender = () => {
 };
 </script>
 <template>
-    <div class="p-8 text-white flex flex-row items-center justify-between w-full">
-        <h1 class="cursor-pointer" @click="previous()"> {{ `<` }} Previous</h1>
-        <h1 v-if="nextPlanet" class="cursor-pointer" @click="next()"> Next up {{ nextPlanet.Name }} > </h1>
-        <h1 v-else class="cursor-pointer" @click="next()">  Finnish Trip </h1>
+    <div v-if="prevPlanet||nextPlanet" class="p-8 text-white flex flex-row items-center justify-between w-full">
+        <h1 class="cursor-pointer" @click="previous()"> {{ prevPlanet ? "< Previous":"Cancel Trip" }}</h1>
+        <h1 class="cursor-pointer" @click="next()">  {{ nextPlanet && nextPlanet.Name != "" ?`Up Next ${nextPlanet.Name}`:" Finnish Trip " }} > </h1>
         
+    </div>
+    <div v-else class="p-8 text-white text-left w-full">
+        <router-link to="/">{{"< Return To Main Page"}}</router-link>
     </div>
     <div v-if="!cancelTrip">
 
